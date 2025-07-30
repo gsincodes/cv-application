@@ -1,0 +1,34 @@
+p{
+    text-align: center;
+
+}
+
+input, textarea{
+    /* display: flex; */
+    background-color: white;
+    border-style: none;
+    border: 1px solid black;
+    margin: 0 10px;
+    min-width: 40vw;
+    @media (min-width:960px) {
+        min-width: 20vw;
+    }
+}
+
+#generate-button{
+    margin-top: 15px;
+    color: white;
+}
+
+p > label{
+    display: block;
+    min-width: 120px;
+    @media (min-width: 425px) {
+        display: inline-block;
+        text-align: right;
+    }
+}
+
+input{
+    
+}
