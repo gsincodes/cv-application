@@ -57,16 +57,8 @@
   border-bottom: 1px solid black;
   /* display: grid; */
   /* grid-template: 1fr / 1fr; */
+  overflow: scroll;
 }
-
-#sidebar{
-  /* grid-row: 1/2; */
-  height: 100%;
-}
-
-/* #section-1{
-  height: 100%;
-} */
 
 form{
   border: 1px solid black;
@@ -90,6 +82,7 @@ form{
   #root{
     display: grid;
     grid-template-columns: 1fr;
+    overflow: hidden;
   }
 
 
@@ -102,9 +95,10 @@ form{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    overflow: hidden;
   }
   #sidebar{
-    grid-area: 1/1/2/2;
+    /* grid-area: 1/1/2/2; */
     border-right: 1px solid black;
   }
   #footer{

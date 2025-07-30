@@ -1,11 +1,9 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import header from './components/header'
 import FormArea from './components/form-area'
-import Section from './components/section'
 import './styles/form-area.css'
+import Resume from './components/resume'
+import './styles/resume.css'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,7 +25,9 @@ function App() {
         <div id='sidebar'>
           <FormArea/>
         </div>
-        <div id='main-content'></div>
+        <div id='main-content'>
+          <Resume />
+        </div>
       </div>
 
       <div id='footer'></div>

@@ -1,0 +1,33 @@
+#main-content{
+    height: 500px;
+    padding: 10px;
+}
+
+#nameText{
+    text-align: center;
+    font-weight: bold;
+}
+
+#contacts{
+    margin: 0;
+    text-align: center;
+    font-size: smaller;
+}
+
+#resume-area{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.resume-section{
+    margin: 10px 0;
+}
+
+/*theres a legend in form-area as well watch out */
+.resume-section > fieldset > legend{     
+    font-weight: 500; 
+}
+
+#edit-button{
+    color: white;
+}

@@ -29,6 +29,6 @@ p > label{
     }
 }
 
-input{
-    
+legend{
+    font-weight: 500;
 }
