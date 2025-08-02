@@ -17,10 +17,22 @@
 #resume-area{
     border: 1px solid black;
     padding: 10px;
+    background-color: rgb(182, 182, 182);
+}
+
+#resume{
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
 }
 
 .resume-section{
     margin: 10px 0;
+}
+
+.resume-section > p {
+    margin: 0;
+    display: inline;
 }
 
 /*theres a legend in form-area as well watch out */
@@ -29,5 +41,30 @@
 }
 
 #edit-button{
+    color: white;
+}
+
+#nameText{
+    font-size: 30px;
+}
+#emailText{
+    margin-right: 10px;
+}
+hr{
+    margin-top: 0;
+}
+.title{
+    font-weight: 500;
+}
+a{
+    cursor: pointer;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
     color: white;
 }

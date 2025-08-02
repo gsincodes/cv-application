@@ -4,9 +4,12 @@ import FormArea from './components/form-area'
 import './styles/form-area.css'
 import Resume from './components/resume'
 import './styles/resume.css'
+import Button from './components/button'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [generalContentList , setGeneralContentList] = useState([]);
+  const [educationContentList , setEducationContentList] = useState([]);
+  const [professionContentList , setProfessionContentList] = useState([]);
 
   return (
     <>
@@ -14,23 +17,36 @@ function App() {
         <div id='logo'>CV Builder</div>
         <div id='navbar'>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Links</li>
+            <li><a href='https://github.com/gsincodes'>Github</a></li>
+            <li><a href='https://www.linkedin.com/in/gsincodes/'>LinkedIn</a></li>
           </ul>
         </div>
       </div>
       
       <div id='content-area'>
         <div id='sidebar'>
-          <FormArea/>
+          <FormArea 
+            getGeneral = {(someVal) => 
+              setGeneralContentList(someVal)
+            }
+            getEducation = {(someVal) => 
+              setEducationContentList(someVal)
+            }
+            getProfession = {(someVal) => 
+              setProfessionContentList(someVal)
+            }
+          />
         </div>
         <div id='main-content'>
-          <Resume />
+          <Resume 
+            passGeneral = {generalContentList}
+            passEducation = {educationContentList}
+            passProfession = {professionContentList}
+          />
         </div>
       </div>
 
-      <div id='footer'></div>
+      <div id='footer'>gsincodes 2025</div>
     </>
   )
 }
